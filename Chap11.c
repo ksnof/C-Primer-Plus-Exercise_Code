@@ -161,8 +161,6 @@ char * find_blank(const char * str)
 
 
 
-12334
-
 
 
 
