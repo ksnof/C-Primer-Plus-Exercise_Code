@@ -8,7 +8,7 @@
 */ 
 
 #include <stdio.h>
-#inlcude <stdlib.h>
+#include <stdlib.h>
 
 /*数组表示法*/
 char * s_gets(char * st, int n)
