@@ -85,3 +85,98 @@ char * s_gets(char * st, int n)
 	return ret_val;
 }
 
+/**T10
+  *编写strlen()函数
+  *接收一个指向字符串的指针作为参数，并返回该字符串的长度
+  *author: Yukai
+  *date: 23/Jan/2018
+  */
+
+#include <stdio.h>
+#include <string.h>
+
+int strlen (const char * str)
+{
+	int count = 0;		//用于返回字符串长度
+	
+	while (*str++)
+		count++;
+	return count;	
+}
+
+/**T11
+  *改写自定义的s_gets函数，用strchr()函数代替while循环查找换行符
+  *author: Yukai
+  *date: 23/Jan/2018
+  */
+  
+#include <stdio.h>
+#include <string.h>
+
+char * s_gets(char * st, int n)
+{
+	char * ret_val;
+	char * a;		//用来接收返回的换行符指针
+	
+	ret_val = fgets(st, n, stdin);
+	if (ret_val)
+	{
+		a = strchr(st, '\n')
+		if (a)
+			*a = '\0'
+		else
+			while (getchar() != '\n')
+				continue;
+	}
+}
+
+/**T12
+  *设计一个函数
+  *接收一个指向字符串的指针，返回指向该字符串第一个空格字符的指针
+  *如果未找到空格字符，则返回空指针
+  *author: Yukai
+  *date: 23/Jan/2018
+*/
+ 
+#include <stdio.h>
+
+char * find_blank(const char * str)
+{
+	char * find;		//用来接收返回的空格字符指针
+	
+	while (*str != '\0')
+	{
+		if (*str == ' ')
+		{
+			find = str;
+			break;
+		}
+		else
+			find = NULL;
+		str++;
+	}		
+	return find;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
