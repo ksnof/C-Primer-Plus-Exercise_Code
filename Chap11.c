@@ -4,8 +4,8 @@
   *读取整行输入并用空字符代替换行符
   *or读取一部分输入，并丢弃剩余部分
   *author: Yukai
-  *date: 23/Jan/2018 
-*/ 
+  *date: 23/Jan/2018
+*/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -15,7 +15,7 @@ char * s_gets(char * st, int n)
 {
 	char * ret_val;
 	int i = 0;
-	
+
 	ret_val = fgets(st, n, stdin);
 	if (ret_val)		//即 ret_val != NULL
 	{
@@ -98,10 +98,10 @@ char * s_gets(char * st, int n)
 int strlen (const char * str)
 {
 	int count = 0;		//用于返回字符串长度
-	
+
 	while (*str++)
 		count++;
-	return count;	
+	return count;
 }
 
 /**T11
@@ -109,7 +109,7 @@ int strlen (const char * str)
   *author: Yukai
   *date: 23/Jan/2018
   */
-  
+
 #include <stdio.h>
 #include <string.h>
 
@@ -117,7 +117,7 @@ char * s_gets(char * st, int n)
 {
 	char * ret_val;
 	char * a;		//用来接收返回的换行符指针
-	
+
 	ret_val = fgets(st, n, stdin);
 	if (ret_val)
 	{
@@ -137,13 +137,13 @@ char * s_gets(char * st, int n)
   *author: Yukai
   *date: 23/Jan/2018
 */
- 
+
 #include <stdio.h>
 
 char * find_blank(const char * str)
 {
 	char * find;		//用来接收返回的空格字符指针
-	
+
 	while (*str != '\0')
 	{
 		if (*str == ' ')
@@ -154,14 +154,14 @@ char * find_blank(const char * str)
 		else
 			find = NULL;
 		str++;
-	}		
+	}
 	return find;
 }
 
 
 
 
-
+12334
 
 
 
