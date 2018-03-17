@@ -5,3 +5,28 @@
   *author: Yukai
   *date: 24/Jan/2018
  */
+ 
+ #include <stdio.h>
+ #include <string.h>
+ 
+char * gets_nchar(char * str, int n);
+
+int main(void)
+{
+	
+	
+	return 0;
+}
+
+char * gets_nchar(char * str, int n)
+{
+	int i ;
+	
+	
+	
+	
+	
+	
+	
+
+}
